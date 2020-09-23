@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:really_cool_date] = "%B %e, %Y"
