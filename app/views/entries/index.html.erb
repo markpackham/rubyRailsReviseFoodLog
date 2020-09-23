@@ -1,11 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Entries</h1>
+<% content_for :title do %>
+Foodlog &ndash; <%= DateTime.now%>
+<% end %>
 
 <table>
   <thead>
     <tr>
-      <th>Meal type</th>
+      <th>Meal Type</th>
       <th>Calories</th>
       <th>Protiens</th>
       <th>Carbohydrates</th>
