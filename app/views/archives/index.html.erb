@@ -1,0 +1,19 @@
+<div class="columns is-centered mt-6">
+<div class="column is-half">
+<% @entries.each do |day, entires| %>
+<h3 class="is-size-4 has-text-weight-bold mb-4 has-text-centered">
+Entries for <%= day %>
+</h3>
+<% entires.each do |entry| %>
+<%= link_to entry_path(entry) do %>
+<div class="card">
+<strong><%= entry.meal_type %> </strong><br />
+<%= entry.calories %> calroies,
+<%= entry.protiens %>g protien
+<%= entry.carbohydrates %>g carbs,
+<%= entry.fats %>g fat
+</div>
+<% end %>
+<% end %>
+<% end %>
+</div></div>

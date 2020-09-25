@@ -31,3 +31,7 @@ Foodlog &ndash; <%= DateTime.now.to_s(:really_cool_date)%>
       </div>
     <% end %>
   </div>
+
+  <div class="columns is-centered mt-6">
+  <%= link_to "View all entires", archives_index_path, class: "button is-link is-outlined is-centered" %>
+  </div>
