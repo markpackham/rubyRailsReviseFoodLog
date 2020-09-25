@@ -5,33 +5,34 @@ Foodlog &ndash; <%= DateTime.now.to_s(:really_cool_date)%>
 <h1>Learning Ruby on Rails & Bulma from https://www.youtube.com/watch?v=B3Fbujmgo60 </h1>
 
 <div class="colums mt-6 is-centered">
-    <% @entries.each do |entry| %>
-    <div class="column is-one-quarter">
+  <% @entries.each do |entry| %>
+  <div class="column is-one-quarter">
     <div class="card">
-    <header class="card-header">
-    <p class="card-header-title">
-    <%= entry.meal_type %>
-    <p>
-    </header>
-    <div class="card-content">
-    <div class="content">
-        <p><span class="has-text-weight-bold"><%= entry.calories %></span> calories</p>
-        <p><span class="has-text-weight-bold"><%= entry.protiens %></span>g of protein</p>
-        <p><span class="has-text-weight-bold"><%= entry.carbohydrates%></span>g of carbs</p>
-        <p><span class="has-text-weight-bold"><%= entry.fats %></span>g of fat</p>
-        <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> ago</p>
-    </div>
-    </div>
-        <div class="card-footer">
+      <header class="card-header">
+        <p class="card-header-title">
+          <%= entry.meal_type %>
+        <p>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <p><span class="has-text-weight-bold"><%= entry.calories %></span> calories</p>
+          <p><span class="has-text-weight-bold"><%= entry.protiens %></span>g of protein</p>
+          <p><span class="has-text-weight-bold"><%= entry.carbohydrates%></span>g of carbs</p>
+          <p><span class="has-text-weight-bold"><%= entry.fats %></span>g of fat</p>
+          <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> ago</p>
+        </div>
+      </div>
+      <div class="card-footer">
         <%= link_to 'Show', entry, class: "card-footer-item" %>
         <%= link_to 'Edit', edit_entry_path(entry), class: "card-footer-item" %>
-        <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %></td>
+        <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+        </td>
       </div>
-      </div>
-      </div>
-    <% end %>
+    </div>
   </div>
+  <% end %>
+</div>
 
-  <div class="columns is-centered mt-6">
+<div class="columns is-centered mt-6">
   <%= link_to "View all entires", archives_index_path, class: "button is-link is-outlined is-centered" %>
-  </div>
+</div>
