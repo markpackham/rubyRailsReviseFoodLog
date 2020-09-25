@@ -14,7 +14,7 @@
                 <div class="level-item has-text-centered">
           <div>
             <p class="heading">Protein</p>
-            <p class="title"><%= entries.pluck(:protiens).sum %>g</p>
+            <p class="title"><%= entries.pluck(:proteins).sum %>g</p>
           </div>
         </div>
                 <div class="level-item has-text-centered">
@@ -37,7 +37,7 @@
           <div class="card-content">
             <strong><%= entry.meal_type %></strong><br />
               <%= entry.calories %> calroies, 
-              <%= entry.protiens %>g protien, 
+              <%= entry.proteins %>g protien, 
               <%= entry.carbohydrates %>g carbs, 
               <%= entry.fats %>g fat
           <div>

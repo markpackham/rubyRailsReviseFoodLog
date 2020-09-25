@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class EntryTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+    test "is valid with valid attributes" do
+        entry = Entry.new(carbohydrates:100, proteins:200, calories: 300, fats: 400)
+        assert entry.save
+    end
 end

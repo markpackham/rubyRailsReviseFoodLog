@@ -16,7 +16,7 @@ Foodlog &ndash; <%= DateTime.now.to_s(:really_cool_date)%>
       <div class="card-content">
         <div class="content">
           <p><span class="has-text-weight-bold"><%= entry.calories %></span> calories</p>
-          <p><span class="has-text-weight-bold"><%= entry.protiens %></span>g of protein</p>
+          <p><span class="has-text-weight-bold"><%= entry.proteins %></span>g of protein</p>
           <p><span class="has-text-weight-bold"><%= entry.carbohydrates%></span>g of carbs</p>
           <p><span class="has-text-weight-bold"><%= entry.fats %></span>g of fat</p>
           <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> ago</p>
