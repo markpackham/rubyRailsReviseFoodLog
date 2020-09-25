@@ -3,13 +3,13 @@
 breakfast:
   meal_type: "Breakfast"
   calories: 10
-  protiens: 20
+  proteins: 20
   carbohydrates: 30
   fats: 40
 
 lunch:
   meal_type: "Lunch"
   calories: 90
-  protiens: 80
+  proteins: 80
   carbohydrates: 70
   fats: 60
